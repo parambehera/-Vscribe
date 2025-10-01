@@ -4,8 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx nodemon index.js",
+    "build": "echo \"Server ready for production\"",
     "start": "node index.js"
   },
   "keywords": [],
