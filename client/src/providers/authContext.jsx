@@ -3,12 +3,11 @@ import { useKindeAuth } from "@kinde-oss/kinde-auth-react";
 
 export const AuthContext = createContext();
 
-export const AuthProvider =  ({ children }) => {
-  
-  const { user } = useKindeAuth();
+export const AuthProvider = ({ children }) => {
+  const { user, isLoading, isAuthenticated } = useKindeAuth();
 
   return (
-    <AuthContext.Provider value={{ user}}>
+    <AuthContext.Provider value={{ user, isLoading, isAuthenticated }}>
       {children}
     </AuthContext.Provider>
   );
