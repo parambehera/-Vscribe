@@ -11,7 +11,7 @@ export default async function initSocket(
 ) {
   const io = new Server(server, {
     cors: {
-      origin: ["http://localhost:5173", "http://localhost:5174"],
+      origin: ["https://vscribe-o506g4sfl-parambeheras-projects.vercel.app"],
       credentials: true,
       methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     },
