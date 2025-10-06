@@ -17,7 +17,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://vscribe-chxza2rnx-parambeheras-projects.vercel.app"], // allow your frontend(s)
+    origin: [process.env.FRONTEND_URL || "http://localhost:5173"], // allow your frontend(s)
     credentials: true, // allow cookies/auth headers if needed
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
