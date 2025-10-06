@@ -5,7 +5,7 @@ export function useApi() {
   const { getToken } = useKindeAuth();
 
   const api = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "https://vscribe.onrender.com",
   });
 
   // Attach token before every request
