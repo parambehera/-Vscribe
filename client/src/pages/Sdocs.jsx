@@ -23,7 +23,7 @@ const Sdocs = () => {
 
   // Redirect to login if not authenticated
   if (!isAuthenticated || !user) {
-    return <Navigate to="/login" replace />;
+    return <Navigate to="/" replace />;
   }
 
   return (

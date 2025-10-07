@@ -22,6 +22,7 @@ const Docs = () => {
   // Check authentication and redirect if not authenticated
   useEffect(() => {
     if (!isAuthenticated) {
+      toast.error("Please log in to access documents");
       navigate('/');
       return;
     }
@@ -50,7 +51,7 @@ const Docs = () => {
         });
         setDocuments(response.data);
       } catch (error) {
-        toast.error("Error fetching documents");
+        // toast.error("Error fetching documents");
         console.error("Error fetching documents:", error);
       }
     };

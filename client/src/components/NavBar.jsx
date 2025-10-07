@@ -9,7 +9,7 @@ const NavBar = () => {
   const navigate = useNavigate();
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-30 bg-white/30 backdrop-blur-md shadow-md">
+    <nav className="fixed top-0 left-0 w-full z-30  backdrop-blur-md  shadow-md">
       <div className="container mx-auto flex items-center justify-between p-4" >
         {/* Logo */}
         <h1
@@ -26,26 +26,19 @@ const NavBar = () => {
               <li>
                 <button
                   onClick={login}
-                  className="rounded-full bg-blue-500 px-6 py-2 text-base font-semibold text-white shadow-lg transition duration-300 transform hover:scale-105 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  className="rounded bg-white-100 px-6 py-2 text-base font-semibold text-black shadow-lg transition duration-300 transform hover:scale-105 hover:bg-blue-100 focus:outline-none focus:ring-2  focus:ring-offset-2"
                 >
                   Login
                 </button>
               </li>
-              <li>
-                <button
-                  onClick={register}
-                  className="rounded-full bg-green-500 px-6 py-2 text-base font-semibold text-white shadow-lg transition duration-300 transform hover:scale-105 hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                >
-                  Register
-                </button>
-              </li>
+            
             </>
           ) : (
             <>
               <li>
                 <button
                   onClick={logout}
-                  className="rounded-full bg-red-500 px-6 py-2 text-base font-semibold text-white shadow-lg transition duration-300 transform hover:scale-105 hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                  className="rounded-full bg-red-300 px-6 py-2 text-base font-semibold text-black shadow-lg transition duration-300 transform hover:scale-105 hover:bg-red-400 focus:outline-none focus:ring-2  focus:ring-offset-2"
                 >
                   Logout
                 </button>
